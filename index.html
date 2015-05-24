@@ -1,0 +1,84 @@
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="/path/to/jquery.masonry.min.js"></script>
+	<style>
+	.item {
+	  	width: 220px;
+  		margin: 10px;
+  		float: left;
+	}
+
+	
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  background: #D8D5D2;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+	</style>
+</head>
+
+<body>
+
+
+<div id="container" class="clearfix">
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039951/" title="Stanley by Dave DeSandro, on Flickr"><img src="images/1.jpg" alt="Stanley" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039885/" title="Officer by Dave DeSandro, on Flickr"><img src="images/2.jpg" alt="Officer" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039583/" title="Tony by Dave DeSandro, on Flickr"><img src="images/3.jpg" alt="Tony" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013646070/" title="Kendra by Dave DeSandro, on Flickr"><img src="images/4.jpg" alt="Kendra" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039541/" title="Giraffe by Dave DeSandro, on Flickr"><img src="images/5.jpg" alt="Giraffe" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039741/" title="Gavin by Dave DeSandro, on Flickr"><img src="images/6.jpg" alt="Gavin" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013039697/" title="Anita by Dave DeSandro, on Flickr"><img src="images/7.jpg" alt="Anita" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013646314/" title="Take My Portrait by Dave DeSandro, on Flickr"><img src="images/8.jpg"   alt="Take My Portrait" /></a>
+    </div>
+  
+    <div class="box photo col3">
+      <a href="http://www.flickr.com/photos/nemoorange/5013040075/" title="Wonder by Dave DeSandro, on Flickr"><img src="images/9.jpg" alt="Wonder" /></a>
+    </div>
+  
+</div> 
+
+
+
+
+
+<script>	
+	var $container = $('#container');
+$container.imagesLoaded(function(){
+  $container.masonry({
+    itemSelector : '.box',
+    columnWidth : 240
+  });
+});
+</script
+</body>
